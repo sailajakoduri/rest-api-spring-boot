@@ -16,7 +16,7 @@ public class MovieTicketBookingManagementAppApplication {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(MovieTicketBookingManagementAppApplication.class, args);
 		
 		MovieTicketBookingService ticketBookingService = applicationContext.getBean("movieTicketBookingService", MovieTicketBookingService.class);
-		
+		//Create a ticket 
 		MovieTicket movieTicket = new MovieTicket();
 		movieTicket.setBookingDate(new Date());
 		movieTicket.setDestStation("FRISCO");
